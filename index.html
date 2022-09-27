@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Глуховский - задание 3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="body">
+      <div class="header">
+         <img class="picture" src="kitta.png" alt="картинка" />
+        <div>Сайт для задания 3</div>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="#list">Гиперссылки </a></li>
+          <li><a href="#table">Таблица </a></li>
+          <li><a href="#form">Формы </a> </li>
+        </ul>
+      </div>
+      <div class="nav">
+        <ol id="list">
+            <li id="first"><a href="http://www.example.com">абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+            <li><a href="https://www.example.com">абсолютную на главную сайта example.com в протоколе https</a></li>
+            <li><a href="ftp://ftp.superwarehouse.com/games;type=d">ссылку на файл на сервере FTP без авторизации</a></li>
+            <li><a href="ftp://test:1234@ftp.someserver.com/program.exe">ссылку на файл на сервере FTP c авторизацией</a></li>
+            <li><a href="https://www.kubsu.ru/#section-content">ссылку на фрагмент страницы некоторого сайта</a></li>
+            <li><a href="#first">ссылку на фрагмент текущей страницы</a></li>
+            <li><a href="https://www.example.com?kek=898&lol=ppp">ссылку с двумя параметрами в URL</a></li>
+
+            <li>
+              <ol>
+                <li><a href="#first">Начало страницы</a></li>
+                <li><a href="#">Главная</a></li>
+              </ol>
+            </li>
+	          <li><a>Ссылка без href</a></li>
+	          <li><a href="">Ссылка с пустым href</a></li>
+	          <li><a href="https://www.example.com" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+	          <li><a href="https://www.example.com" rel="noindex">ссылка запрещенную для индексации поисковиками</a></li>
+            <li><h3>контекстную в тексте абзаца</h3>
+              <p>
+                <a href="https://www.example.com">Example.com</a> является сайтом заглушкой.
+              </p>
+            </li>
+          <li><a href="https://www.example.com"><img src="image.jpeg" width="50" height="50" alt="cat"></a></li>
+          
+          <li>
+            <img src="image2.png" width="400" height="400" usemap="#navigation" alt="map">
+            <map name="navigation">
+              <area shape="circle"
+                  coords="400,400,200"
+                  href="https://ast.ru/news/literaturnye-kotiki-ne-menee-milye-i-umnye-chem-nastoyashchie/"
+                  alt="circle">
+              <area shape="rect"
+                coords="0,0,200,200"
+                href="https://www.example.com"
+                alt="rectangle">
+            </map>
+          </li>
+	      <li><a href="example.html">относительную на страницу в текущем каталоге</a></li>
+	      <li><a href="about/contacts.html">относительную на страницу в каталоге aboutt</a></li>
+	      <li><a href="./some_file.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
+	      <li><a href="././random.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
+	      <li><a href="/">сокращенную на главную</a></li>
+	      <li><a href="/example.html"> сокращенную ссылку на внутреннюю</a></li>
+
+        </ol>
+
+
+        <h2 id="table">Таблица</h2>
+		    <table>
+          <tr>
+            <th>1</th>
+            <th>2</th>
+            <th> 3</th>
+          </tr>
+          <tr>
+            <td colspan="3">Ячейка 11 объединенная с 12 и 13</td>
+          </tr>
+          <tr>
+            <td>Ячейка 21</td>
+            <td>Ячейка 22</td>
+            <td>Ячейка 23</td>
+          </tr>
+          <tr>
+            <td colspan="2">Ячейка 31 объединенная с 32</td>
+            <td>Ячейка 33</td>
+          </tr>
+          <tr>
+            <td>Ячейка 41</td>
+            <td>Ячейка 42</td>
+            <td>Ячейка 43</td>
+          </tr>
+        </table>
+
+
+
+    <h2 id="form">Форма для заполнения</h2>
+
+    <form  action="/" method="POST">
+
+      <label>
+        Введите ваше имя:<br/>
+        <input name="field-name-1"
+          placeholder="Ваше имя" 
+        />
+      </label>
+      
+      <br/>
+      <label>
+        Текстовое поле email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="email" 
+        />
+      </label>
+      <br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date"
+          value="2019-08-13"
+          type="date"
+        />
+      </label>
+      <br />
+
+      Пол:<br />
+      
+      <label>
+        <input 
+        type="radio" checked="checked"
+        name="sex" value="male" 
+        />
+        Мужской
+      </label>
+      <label>
+        <input type="radio"
+        name="sex" value="female" 
+        />
+        Женский
+      </label>
+      <br />
+
+      Количество конечностей:<br />
+      <label>
+        <input type="radio" checked="checked"
+        name="limbs" value="1" 
+        />1</label>
+      <label>
+        <input type="radio"
+        name="limbs" value="2" 
+        />2</label>
+      <label>
+        <input type="radio"
+          name="limbs" value="3" 
+          />3</label>
+      <label>
+        <input type="radio"
+         name="limbs" value="4" 
+          />4</label>
+      
+      <br />
+
+      <label>
+        сверхспособности (множественный выбор):
+        <br />
+        <select name="superpowers[]"
+          multiple="multiple">
+          <option value="immortal">Бессмертие</option>
+          <option value="walls" selected="selected">Хождение сквозь стены</option>
+          <option value="levitate" selected="selected">Левитация</option>
+        </select>
+      </label>
+      <br />
+
+      <label>
+        Биография:
+        <br /> 
+        <textarea name="bio">Давным-давно</textarea>
+      </label>
+      <br />
+
+      
+      <label>
+        Чекбокс:<br />
+        <input type="checkbox" checked="checked"
+        name="agree" />
+        с <a href="/contract.txt">контрактом</a> ознакомлен (а)
+      </label>
+      <br />
+
+      <input type="submit" value="Отправить" />
+    </form>
+     </div>
+    </div>
+    <div id="footer"> &copy; Глуховский Семён, 2022 </div>
+  </body>
+    </body>
+</html>

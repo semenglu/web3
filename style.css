@@ -1,0 +1,73 @@
+.body {
+    background-color:rgb(71, 207, 112);
+}
+
+.header {
+    font-size: large;
+	color: blue;
+	width: 100%;
+	background-color: yellowgreen;
+	padding: 20px;
+	height: 120px;
+}
+
+.picture {
+	padding: 10px 10px 10px 15%;
+	float: left;
+	margin-right: 10px;
+	height: 120px;
+}
+
+#menu li {
+	display: inline-block;
+}
+
+#menu a {
+	display: block;
+	padding: 5px 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#menu {
+	color: darkslateblue;
+	max-width: 960px;
+	background-color: darkseagreen;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.nav {
+	color: darkolivegreen;
+	max-width: 960px;
+	background-color: darkseagreen;
+	margin: 0 auto;
+	text-decoration: none;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: saddlebrown
+}
+
+tr:nth-child(even) {
+	background: burlywood;
+}
+
+tr:nth-child(odd) {
+	background: cadetblue;
+}
+
+#footer {
+	background-color: bisque;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 0px 0px 0px 10px;
+	width: 100%;
+	font-size: 19px;
+	color: darkolivegreen;
+}

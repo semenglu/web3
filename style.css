@@ -1,80 +1,164 @@
-.body {
-    background-color:rgb(71, 207, 112);
+html,body
+{
+  background-color: #80c6c9;
 }
-
-.header {
-    font-size: large;
-	color: blue;
-	width: 100%;
-	background-color: yellowgreen;
-	padding: 20px;
-	height: 120px;
+#line
+{
+  background-color: #468bb9;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  flex-grow: 1;
+  font-size: 60px;
+  color: #ffffff;
 }
-
-.picture {
-	padding: 10px 10px 10px 15%;
-	float: left;
-	margin-right: 10px;
-	height: 120px;
+#logo 
+{
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 250px;
 }
-
-#menu li {
-	display: flex;
-	flex-direction: column;
+.menu
+{
+  display: flex;
+  background-color: #468bb9;
+  margin-top: 20px;
+  flex-direction: column;
+  flex-grow: 1;
+  list-style-type: none;
+  justify-content: center;
 }
-
-#menu a {
-	display: block;
-	padding: 5px 15px;
-	color: #fff;
-	text-decoration: none;
+.menu li
+{
+   list-style-type: none;
 }
-
-#menu {
-	color: darkslateblue;
-	max-width: 960px;
-	background-color: darkseagreen;
-	margin: 0 auto;
-	margin-top: 20px;
-	padding: 10px;
+#ssilki
+{
+  background-color: #468bb9;
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-direction: column;
 }
-
-.nav {
-	color: darkolivegreen;
-	max-width: 960px;
-	background-color: darkseagreen;
-	margin: 0 auto;
-	text-decoration: none;
-	margin-top: 20px;
-	padding: 10px;
+.tabl
+{
+  background-color: #468bb9;
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-top: 20px;
 }
-
-.nav a {
-	text-decoration: none;
-	color: saddlebrown
+.fourm
+{
+   background-color: #468bb9;
+  display: flex;
+  flex-direction: column;
+   margin-top: 20px;
+  order: -1;
 }
-
-tr:nth-child(even) {
-	background: burlywood;
+.swap
+{
+  display: flex;
+  flex-direction: column;
 }
-
-tr:nth-child(odd) {
-	background: cadetblue;
+table 
+{
+  border: 1px solid #228b22;
+  width: 900px;
+  background: #0edb9e;
 }
-
-#footer {
-	background-color: bisque;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	padding: 0px 0px 0px 10px;
-	width: 100%;
-	font-size: 19px;
-	color: darkolivegreen;
+td, th 
+{
+    padding: 3px;
 }
-
-@media screen and (min-width:600px) {
-	#main li {
-		display: inline-block;
-	}
+th 
+{
+  text-align: center;
+  padding: 10px; 
+  border: 1px solid #A9E2CC;
+}
+td 
+{
+  text-align: center;
+  font-size: 0.8em;
+  padding: 5px 7px;
+  border: 1px solid #A9E2CC;
+}
+tr.even 
+{
+  background: #dd4074;
+}
+.footer
+{
+  display: flex;
+  background-color: #468bb9;
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1224px) {
+#logo 
+{
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 500px;
+  margin-left: 240px;
+}
+.menu
+{ 
+  display: flex;
+  background-color: #468bb9;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-left: 240px;
+  margin-right: 240px;
+}
+.menu a
+  {
+     list-style-type: none;
+  display: inline-block;
+  margin-right: 80px;
+  text-align: center;
+  } 
+  #ssilki
+{
+  background-color: #468bb9;
+  display: flex;
+  flex-basis: auto;
+  justify-content: left;
+  margin-right: 240px;
+  margin-left: 240px;
+  flex-direction: column;
+}
+.tabl
+{
+  background-color: #468bb9;
+  display: flex;
+  flex-basis: auto;
+  margin-right: 240px;
+  margin-left: 240px;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+  order: -1;
+}
+.swap
+{
+  display: flex;
+  flex-direction: column;
+}
+.fourm
+{
+   margin-top: 20px;
+   background-color: #468bb9;
+  display: flex;
+  flex-basis: auto;
+    margin-right: 240px;
+  margin-left: 240px;
+  padding: 10px;
+  flex-direction: column;
+}
+  
 }

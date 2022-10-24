@@ -1,200 +1,156 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <title>Глуховский - задание 3</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body class="body">
-      <div class="header">
-         <img class="picture" src="kitta.png" alt="картинка" />
-        <div>Сайт для задания 3</div>
+ <html lang="ru">
+   <head>
+    <title> Глуховский - задание 3</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+     <header>
+      <div id="line">
+       <a>Главная</a>
+        <div id="logo">
+       <img src="https://pixelbox.ru/wp-content/uploads/2021/04/cats-ava-steam-28.jpg" Width="100" Height="100" alt="name"/>
+       </div>
       </div>
-      <div id="menu">
-        <ul>
-          <li><a href="#list">Гиперссылки </a></li>
-          <li><a href="#table">Таблица </a></li>
-          <li><a href="#form">Формы </a> </li>
-        </ul>
-      </div>
-      <div class="nav">
-        <ol id="list">
+    </header>
+    <nav>
+     <ul class="menu">
+       <li><a href="#Гиперссылки" title="Нумированный список гиперссылок">Гиперссылки</a></li>
+       <li><a href ="#Таблица" title="Таблица с контентом">Таблица</a></li>
+       <li><a href ="#Форма" title="Перейти к заполнению формы">Форма</a></li>
+      </ul>
+    </nav>
+    <div id="ssilki">
+	    <h4 id="Гиперссылки">Гиперссылки</h4>
+        <ol> 
             <li id="first"><a href="http://www.example.com">абсолютная гиперссылка на главную страницу сайта example.com</a></li>
             <li><a href="https://www.example.com">абсолютную на главную сайта example.com в протоколе https</a></li>
             <li><a href="ftp://ftp.superwarehouse.com/games;type=d">ссылку на файл на сервере FTP без авторизации</a></li>
             <li><a href="ftp://test:1234@ftp.someserver.com/program.exe">ссылку на файл на сервере FTP c авторизацией</a></li>
             <li><a href="https://www.kubsu.ru/#section-content">ссылку на фрагмент страницы некоторого сайта</a></li>
             <li><a href="#first">ссылку на фрагмент текущей страницы</a></li>
-            <li><a href="https://www.example.com?kek=898&lol=ppp">ссылку с двумя параметрами в URL</a></li>
-
+            <li><a href="http://example.com?type=Socks&color=Red">ссылку с двумя параметрами в URL</a></li>
             <li>
-              <ol>
-                <li><a href="#first">Начало страницы</a></li>
-                <li><a href="#">Главная</a></li>
-              </ol>
+            <ul>
+                      <li><a href="#first">Начало страницы</a></li>
+                      <li><a href="#">Главная</a></li>
+              </ul>
             </li>
-	          <li><a>Ссылка без href</a></li>
+            <li><a>https://example.com/</a></li>
 	          <li><a href="">Ссылка с пустым href</a></li>
 	          <li><a href="https://www.example.com" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
 	          <li><a href="https://www.example.com" rel="noindex">ссылка запрещенную для индексации поисковиками</a></li>
-            <li><h3>контекстную в тексте абзаца</h3>
-              <p>
-                <a href="https://www.example.com">Example.com</a> является сайтом заглушкой.
-              </p>
+            <li>контекстную в тексте <a href="https://example.com">абзаца</a></li>
+            <li><a href="http://example.com"><img src="https://avatars.mds.yandex.net/i?id=0c710823144eff4868bbcd901dd8db06-5213641-images-thumbs&ref=rim&n=33&w=150&h=150" Height= "50" Width="50" alt="flower"></a></li>
+            <li>
+                <map name="map1">
+                  <area shape="circle" coords= "70,70,65"  href="http://example.com" alt="circle">
+                  <area shape="rect" coords = "164,10,290,140" href="http://example.com/" alt="square">
+                </map>
+                <img usemap="#map1" src="https://avatars.mds.yandex.net/i?id=943fa2d3fd11275e5fbb8a180c3405f9-4012162-images-thumbs&ref=rim&n=33&w=267&h=150" Width="301" Height="174" alt="shapes">
             </li>
-          <li><a href="https://www.example.com"><img src="image.jpeg" width="50" height="50" alt="cat"></a></li>
-          
-          <li>
-            <img src="image2.png" width="400" height="400" usemap="#navigation" alt="map">
-            <map name="navigation">
-              <area shape="circle"
-                  coords="400,400,200"
-                  href="https://ast.ru/news/literaturnye-kotiki-ne-menee-milye-i-umnye-chem-nastoyashchie/"
-                  alt="circle">
-              <area shape="rect"
-                coords="0,0,200,200"
-                href="https://www.example.com"
-                alt="rectangle">
-            </map>
-          </li>
-	      <li><a href="example.html">относительную на страницу в текущем каталоге</a></li>
+            <li><a href="example.html">относительную на страницу в текущем каталоге</a></li>
 	      <li><a href="about/contacts.html">относительную на страницу в каталоге aboutt</a></li>
 	      <li><a href="./some_file.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
 	      <li><a href="././random.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
 	      <li><a href="/">сокращенную на главную</a></li>
 	      <li><a href="/example.html"> сокращенную ссылку на внутреннюю</a></li>
-
-        </ol>
-
-
-        <h2 id="table">Таблица</h2>
-		    <table>
-          <tr>
-            <th>1</th>
-            <th>2</th>
-            <th> 3</th>
-          </tr>
-          <tr>
-            <td colspan="3">Ячейка 11 объединенная с 12 и 13</td>
-          </tr>
-          <tr>
-            <td>Ячейка 21</td>
-            <td>Ячейка 22</td>
-            <td>Ячейка 23</td>
-          </tr>
-          <tr>
-            <td colspan="2">Ячейка 31 объединенная с 32</td>
-            <td>Ячейка 33</td>
-          </tr>
-          <tr>
-            <td>Ячейка 41</td>
-            <td>Ячейка 42</td>
-            <td>Ячейка 43</td>
-          </tr>
-        </table>
-
-
-
-    <h2 id="form">Форма для заполнения</h2>
-
-    <form  action="/" method="POST">
-
-      <label>
-        Введите ваше имя:<br/>
-        <input name="field-name-1"
-          placeholder="Ваше имя" 
-        />
-      </label>
-      
-      <br/>
-      <label>
-        Текстовое поле email:<br />
-        <input name="field-email"
-          type="email"
-          placeholder="email" 
-        />
-      </label>
-      <br />
-
-      <label>
-        Дата рождения:<br />
-        <input name="field-date"
-          value="2019-08-13"
-          type="date"
-        />
-      </label>
-      <br />
-
-      Пол:<br />
-      
-      <label>
-        <input 
-        type="radio" checked="checked"
-        name="sex" value="male" 
-        />
-        Мужской
-      </label>
-      <label>
-        <input type="radio"
-        name="sex" value="female" 
-        />
-        Женский
-      </label>
-      <br />
-
-      Количество конечностей:<br />
-      <label>
-        <input type="radio" checked="checked"
-        name="limbs" value="1" 
-        />1</label>
-      <label>
-        <input type="radio"
-        name="limbs" value="2" 
-        />2</label>
-      <label>
-        <input type="radio"
-          name="limbs" value="3" 
-          />3</label>
-      <label>
-        <input type="radio"
-         name="limbs" value="4" 
-          />4</label>
-      
-      <br />
-
-      <label>
-        сверхспособности (множественный выбор):
-        <br />
-        <select name="superpowers[]"
-          multiple="multiple">
-          <option value="immortal">Бессмертие</option>
-          <option value="walls" selected="selected">Хождение сквозь стены</option>
-          <option value="levitate" selected="selected">Левитация</option>
-        </select>
-      </label>
-      <br />
-
-      <label>
-        Биография:
-        <br /> 
-        <textarea name="bio">Давным-давно</textarea>
-      </label>
-      <br />
-
-      
-      <label>
-        Чекбокс:<br />
-        <input type="checkbox" checked="checked"
-        name="agree" />
-        с <a href="/contract.txt">контрактом</a> ознакомлен (а)
-      </label>
-      <br />
-
-      <input type="submit" value="Отправить" />
-    </form>
-     </div>
+          </ol>
     </div>
-    <div id="footer"> &copy; Глуховский Семён, 2022 </div>
+		<div class="swap">
+	   <div class = "tabl">
+		<h4 id="Таблица">Таблица</h4>
+	  <table>
+		  <tr class="even">
+			  <th>Продукт</th>
+			  <th>Цена</th>
+			  <th>Откуда</th>
+		  </tr>
+		  <tr>
+			  <td rowspan="2">Объединённая по вертикали</td>
+			  <td>2</td>
+			  <td>3</td>
+		  </tr>
+		  <tr class="even">
+			  <td>4</td>
+			  <td>5</td>
+		  </tr>
+          <tr class="even">
+            <td>6</td>
+            <td colspan="2">Объединённая ячейчка по горизонтали</td>
+        </tr>
+		  <tr>
+			  <td>8</th>
+			  <td>9</td>
+              <td>10</td>
+		  </tr>
+		   </table>
+	   </div>
+	<div class = "fourm">
+		<h4 id="Форма">Форма HTML</h4>
+    <form action="URL_отправки_данных" method="POST">
+ <label>
+ Имя:
+  <br />
+      <input name="field-name-1" value="Введите имя" /> 
+  </label><br />
+ <label>
+ Почта:
+  <br />
+      <input name="field-email" value="Ваша электронная почта" type="email" />
+  </label>
+ <br />
+  <label>
+ Дата рождения:
+ <br />
+      <input name="field-date" value="2019-08-13" type="date" />
+  </label>
+ <br />
+ Пол:
+ <br />
+  <label>
+     <input type="radio" checked="checked" name="radio-group-0" value="М" />М
+  </label>
+  <label>
+     <input type="radio" name="radio-group-0" value="Ж" />Ж
+ </label><br />
+Кол-во конечностей:
+ <br />
+<label>
+ <input type="radio" checked="checked" name="radio-group-1" value="Значение1" />1</label>
+ <label>
+ <input type="radio" name="radio-group-1" value="Значение2" />2</label> 
+ <label>
+ <input type="radio" name="radio-group-1" value="Значение3" />3</label> 
+ <label>
+ <input type="radio" name="radio-group-1" value="Значение4" />4</label>
+ <label>
+ <input type="radio" name="radio-group-1" value="Значение5" />5</label>
+ <br /> 
+   <label>
+Сверхспособности:
+ <br />
+  <select name="field-name-3[]" multiple="multiple">
+  <option value="Значение1">Бессмертие</option>
+  <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+  <option value="Значение3" selected="selected">Левитация</option>
+  </select></label>
+ <br />
+  <label>
+Биография:
+  <br />
+  <textarea name="field-name-2">Напишите свою биографию</textarea></label>
+  <br />
+ <br />
+  <label>C контрактом ознакомлен(а)<input type="checkbox" name="check-1" /></label>
+ <br />
+ Отправить форму:
+  <input type="submit" value="Отправить" />
+  </form>
+</div>
+</div>
+		<footer class="footer" id="foot">
+<h4>(с) Глуховский Семён, 2022</h4>
+</footer>
   </body>
-    </body>
 </html>
